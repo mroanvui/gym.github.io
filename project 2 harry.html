@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymnasium Royale</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        height: 1100px;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/dark-g2c8e2925e_1920.jpg);
+        background-position: 33% 34%;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 15px;
+
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        position: relative;
+        top: -13px;
+        left: 12px;
+        width: 50px;
+        padding: 0px 30px;
+        filter: invert(100%);
+      
+    }
+
+    .left div {
+        position: relative;
+        top: -22px;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        top: 15px;
+        margin: 15px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        /* border: 2px solid yellow; */
+    }
+
+    .button {
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        border: 2px solid grey;
+        /* padding: 2px; */
+        background-color: rgb(95 95 124 / 58%);
+        border-radius: 9px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        text-decoration: underline;
+        background-color: rgb(168, 167, 167);
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 0px 20px;
+    }
+
+    .navbar li a:hover {
+
+        color: rgb(239, 59, 18);
+        text-decoration: underline;
+        padding: 0px 20px;
+    }
+
+    .navbar li a.active {
+        background-color: blue;
+        border-radius: 9px;
+        padding: 1px 6px;
+    }
+
+    .container {
+        font-family: 'Kanit', sans-serif;
+        font-size: 25px;
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+
+        width: 75%;
+        border-radius: 35px;
+        margin-top: 1.2em;
+    }
+
+    .formAll input {
+        text-align: center;
+        display: block;
+        width: 150px;
+        padding: 3px 120px;
+        border: 2px solid grey;
+        margin: 3px auto;
+        position: relative;
+        top: 20px;
+        left: -315px;
+        border-radius: 4px;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .container button {
+        position: relative;
+        top: 44px;
+    }
+    .container span{
+        text-align: center;
+        position: relative;
+    left: 23px;
+    }
+    .container button{
+        width: 398px;
+        position: relative;
+        left: 57px;;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/body-builder-g94618551a_1280.png" alt="image not found">
+            <div>Gymnasium Royale</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Newest &nbsp; Tools</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="button">Contact Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <span>Welcome to the best gym of muzaffarpur</span>
+        <form action="backened.php">
+
+            <div class="formAll">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="formAll">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="formAll">
+                <input type="text" placeholder="Enter your gender">
+            </div>
+            <div class="formAll">
+                <input type="text" placeholder="Enter your ph. number">
+            </div>
+            <div class="formAll">
+                <input type="text" placeholder="Enter your address">
+            </div>
+            <div>
+                <button class="button">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
